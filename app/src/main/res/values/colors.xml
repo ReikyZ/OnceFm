@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="default_shadow_color">#88757575</color>
+    <color name="default_fill_color">#ffffff</color>
+
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="alpha_black">#c8000000</color>
+    <color name="yellow">#ffe73d</color>
+    <color name="alpha_yellow">#c8ffe73d</color>
+    <color name="faded_yellow">#ffe97f</color>
+    <color name="red">#FF5D5D</color>
+    <color name="alpha_red">#c8ff5b5b</color>
+    <color name="grey">#bebebe</color>
+    <color name="faded_grey">#eee</color>
+
+    <color name="blue">#77B1C5</color>
+    <color name="transparent">#00000000</color>
+    <color name="green">#39CA74</color>
+
+    <color name="light_grey">#c6c7c3</color>
+    <color name="alpha_white">#91ffffff</color>
+    <color name="transparent_white">#eeffffff</color>
+    <color name="almost_transparent">#99ffffff</color>
+    <color name="alpha_bg">#44000000</color>
+    <color name="light_white">#f4f4f4</color>
+    <color name="light_black">#232323</color>
+    <color name="transparent_black">#78232323</color>
+    <color name="hlaf_black">#88000000</color>
+    <color name="btn_black">#aa000000</color>
+    <color name="half_black">#88000000</color>
+    <color name="alpha_grey">#40c6c7c3</color>
+    <color name="almost_black">#dd000000</color>
+
+    <!--地址选择边框颜色-->
+    <color name="province_line_border">#C7C7C7</color>
+    <!--背景颜色-->
+    <color name="bg_grey">#FFF4F4F4</color>
+    <!--<color name="chisha_bg">#EFEFF4</color>-->
+    <color name="chisha_bg">#f4f4f4</color>
+    <color name="rb_grey">#FFE5E5E5</color>
+    <color name="shadow_grey">#FFE5E5E5</color>
+    <color name="default_color">#202020</color>
+    <color name="text_grey">#bebebe</color>
+    <color name="text_black">#1D1D1D</color>
+    <color name="bucket_bg">#cdff4d</color>
+    <color name="transparent_grey">#33c6c7c3</color>
+    <color name="flow_card_bg">#efeff4</color>
+</resources>

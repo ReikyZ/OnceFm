@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu_drawer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/pll_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/song_name"
+                style="@style/textview_song_info" />
+
+            <TextView
+                android:id="@+id/song_artist"
+                style="@style/textview_song_artist" />
+
+            <TextView
+                android:id="@+id/song_album"
+                style="@style/textview_song_album" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="100%w">
+
+            <ImageView
+                android:id="@+id/iv_cache"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <ImageView
+                android:id="@+id/iv_album_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/songblur" />
+
+            <view.CircleImageMoveableView
+                android:id="@+id/iv_pan"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.8"
+                android:src="@mipmap/songpic"
+                app:border_color="#ffffffff"
+                app:border_width="2dp" />
+
+
+            <view.CircleProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="310dp"
+                android:layout_height="310dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                app:backgroundColor="#fff7f0e0"
+                app:layout_width="2dp"
+                app:max="100"
+                app:progressColor="#ff77b1c5"
+                app:textColor="#0077b1c5"
+                app:thumbSize="12" />
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@mipmap/logo" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+            <view.CircleImageView
+                android:id="@+id/btn_star"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/star_black"
+                app:border_color="#8fff"
+                app:border_width="2dp" />
+
+            <view.CircleImageView
+                android:id="@+id/btn_play"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:src="@mipmap/play_black"
+                app:border_color="#8fff"
+                app:border_width="2dp" />
+
+            <view.CircleImageView
+                android:id="@+id/btn_next"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/next_black"
+                app:border_color="#8fff"
+                app:border_width="2dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    <include layout="@layout/menu" />
+
+</android.support.v4.widget.DrawerLayout>

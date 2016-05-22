@@ -1,0 +1,142 @@
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="160dp"
+    android:layout_height="fill_parent"
+    android:layout_gravity="start"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/menu_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#fff7f0e0"
+        app:layout_heightPercent="100%h"
+        app:layout_widthPercent="50%w">
+
+        <ListView
+            android:id="@+id/lv_mune"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btn_noti_list"
+                android:layout_width="@dimen/btn_noti_size"
+                android:layout_height="@dimen/btn_noti_size"
+                android:padding="8dp"
+                android:src="@mipmap/list" />
+
+            <TextView
+                android:id="@+id/tv_noti_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="@string/song_list" />
+
+            <ImageView
+                android:id="@+id/btn_noti_response"
+                android:layout_width="@dimen/btn_noti_size"
+                android:layout_height="@dimen/btn_noti_size"
+                android:padding="8dp"
+                android:src="@mipmap/response" />
+
+            <TextView
+                android:id="@+id/tv_noti_response"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="@string/message" />
+
+            <ImageView
+                android:id="@+id/btn_noti_advice"
+                android:layout_width="@dimen/btn_noti_size"
+                android:layout_height="@dimen/btn_noti_size"
+                android:padding="8dp"
+                android:src="@mipmap/advice" />
+
+            <TextView
+                android:id="@+id/tv_noti_advice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="@string/feedback" />
+
+            <ImageView
+                android:id="@+id/btn_noti_install"
+                android:layout_width="@dimen/btn_noti_size"
+                android:layout_height="@dimen/btn_noti_size"
+                android:padding="8dp"
+                android:src="@mipmap/download"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_noti_install"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="Update App"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/btn_noti_setting"
+                android:layout_width="@dimen/btn_noti_size"
+                android:layout_height="@dimen/btn_noti_size"
+                android:padding="8dp"
+                android:src="@mipmap/on" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="@string/notify_switch" />
+
+            <ImageView
+                android:id="@+id/btn_timer"
+                android:layout_width="@dimen/btn_noti_size"
+                android:layout_height="@dimen/btn_noti_size"
+                android:padding="8dp"
+                android:src="@mipmap/timer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="@string/timer_shutdown" />
+
+            <ImageView
+                android:id="@+id/btn_shutdown"
+                android:layout_width="@dimen/btn_noti_size"
+                android:layout_height="@dimen/btn_noti_size"
+                android:padding="8dp"
+                android:src="@mipmap/shutdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="@string/shutdown" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#ff77b1c5"
+        app:layout_heightPercent="100%h"
+        app:layout_widthPercent="7%w" />
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

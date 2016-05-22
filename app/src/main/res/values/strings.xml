@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">OnceFm</string>
+    <string name="song_list">歌曲列表</string>
+    <string name="message">消息</string>
+    <string name="feedback">反馈</string>
+    <string name="notify_switch">通知开关</string>
+    <string name="timer_shutdown">定时关闭</string>
+    <string name="shutdown">退出</string>
+    <string name="downloading">正在下载...</string>
+    <string name="is_downing_wizout_wifi">正在使用流量下载</string>
+    <string name="shall_continue">是否继续？</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+</resources>

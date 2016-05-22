@@ -1,0 +1,84 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1135376 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:323), pid=2988, tid=3044
+#
+# JRE version: Java(TM) SE Runtime Environment (7.0_79-b15) (build 1.7.0_79-b15)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.79-b02 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000853e800):  JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=3044, stack(0x0000000009a90000,0x0000000009b90000)]
+
+Stack: [0x0000000009a90000,0x0000000009b90000]
+
+Current CompileTask:
+C2:   5438  518   !         com.android.dx.cf.code.RopperMachine::run (1550 bytes)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x0000000009fac800 JavaThread "pool-2-thread-4" [_thread_in_Java, id=3560, stack(0x000000000a690000,0x000000000a790000)]
+  0x0000000009fac000 JavaThread "pool-2-thread-3" [_thread_blocked, id=9744, stack(0x000000000a590000,0x000000000a690000)]
+  0x0000000009fa8000 JavaThread "pool-2-thread-2" [_thread_blocked, id=7108, stack(0x000000000a490000,0x000000000a590000)]
+  0x0000000009fa3000 JavaThread "pool-3-thread-1" [_thread_blocked, id=7252, stack(0x000000000a390000,0x000000000a490000)]
+  0x0000000009f09800 JavaThread "pool-2-thread-1" [_thread_blocked, id=6404, stack(0x000000000a290000,0x000000000a390000)]
+  0x0000000008551000 JavaThread "Service Thread" daemon [_thread_blocked, id=5368, stack(0x0000000009c90000,0x0000000009d90000)]
+  0x000000000854d800 JavaThread "C2 CompilerThread1" daemon [_thread_in_native, id=9532, stack(0x0000000009b90000,0x0000000009c90000)]
+=>0x000000000853e800 JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=3044, stack(0x0000000009a90000,0x0000000009b90000)]
+  0x000000000853d800 JavaThread "Attach Listener" daemon [_thread_blocked, id=6028, stack(0x0000000009990000,0x0000000009a90000)]
+  0x000000000853b000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=9276, stack(0x0000000009890000,0x0000000009990000)]
+  0x00000000084ef800 JavaThread "Finalizer" daemon [_thread_blocked, id=9224, stack(0x0000000009790000,0x0000000009890000)]
+  0x00000000084e4800 JavaThread "Reference Handler" daemon [_thread_blocked, id=8516, stack(0x0000000009690000,0x0000000009790000)]
+  0x000000000043d800 JavaThread "main" [_thread_in_native, id=8680, stack(0x0000000002490000,0x0000000002590000)]
+
+Other Threads:
+  0x00000000084e0800 VMThread [stack: 0x0000000009590000,0x0000000009690000] [id=2496]
+  0x000000000855f000 WatcherThread [stack: 0x0000000009d90000,0x0000000009e90000] [id=9316]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 69632K, used 9022K [0x00000000eaa80000, 0x00000000f3280000, 0x0000000100000000)
+  eden space 64512K, 6% used [0x00000000eaa80000,0x00000000eae52b80,0x00000000ee980000)
+  from space 5120K, 99% used [0x00000000ee980000,0x00000000eee7ce68,0x00000000eee80000)
+  to   space 5120K, 0% used [0x00000000f2d80000,0x00000000f2d80000,0x00000000f3280000)
+ ParOldGen       total 83968K, used 27531K [0x00000000c0000000, 0x00000000c5200000, 0x00000000eaa80000)
+  object space 83968K, 32% used [0x00000000c0000000,0x00000000c1ae2cc8,0x00000000c5200000)
+ PSPermGen       total 21504K, used 5574K [0x00000000bae00000, 0x00000000bc300000, 0x00000000c0000000)
+  object space 21504K, 25% used [0x00000000bae00000,0x00000000bb371a18,0x00000000bc300000)
+
+Card table byte_map: [0x0000000005750000,0x0000000005980000] byte_map_base: 0x0000000005179000
+
+Polling page: 0x00000000001f0000
+
+Code Cache  [0x0000000002690000, 0x0000000002900000, 0x0000000005690000)
+ total_blobs=733 nmethods=517 adapters=168 free_code_cache=47071Kb largest_free_block=48153536
+
+Compilation events (10 events):
+Event: 5.347 Thread 0x000000000854d800  517             com.android.dx.cf.code.BaseMachine::popArgs (127 bytes)
+Event: 5.347 Thread 0x000000000853e800  518   !         com.android.dx.cf.code.RopperMachine::run (1550 bytes)
+Event: 5.351 Thread 0x000000000854d800 nmethod 517 0x0000000002889c50 code [0x0000000002889dc0, 0x0000000002889fd8]
+Event: 5.351 Thread 0x000000000854d800  519   !         com.android.dx.rop.type.Type::intern (319 bytes)
+Event: 5.373 Thread 0x000000000854d800 nmethod 519 0x000000000289d190 code [0x000000000289d3a0, 0x000000000289e3d0]
+Event: 5.373 Thread 0x000000000854d800  520             com.android.dx.ssa.SsaInsn::<init> (29 bytes)
+Event: 5.373 Thread 0x000000000854d800 nmethod 520 0x000000000289b7d0 code [0x000000000289b900, 0x000000000289b998]
